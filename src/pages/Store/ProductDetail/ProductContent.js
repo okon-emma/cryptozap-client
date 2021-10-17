@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../../Header";
 import Footer from "../../Footer";
+import PaymentModal from "./PaymentModal";
 
 function ProductContent({ name, price, image }) {
+  const [show, setShow] = useState(false);
+  const [fullscreen, setFullscreen] = useState(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
       <div class="header">
@@ -25,7 +31,10 @@ function ProductContent({ name, price, image }) {
               <option value="">Medium</option>
               <option value="">Large</option>
             </select>
-            <a href="" class="btn">
+            <a
+              class="btn buy-with-crypto"
+              href="https://commerce.coinbase.com/checkout/155e93c5-bed9-4eb0-bc3f-d2ac735d853e"
+            >
               Buy Now
             </a>
             <h3>
@@ -33,9 +42,8 @@ function ProductContent({ name, price, image }) {
             </h3>
             <br />
             <p>
-              Thank you for browsing our products, I hope you can enjoy
-              shopping. We will be shipped within 24 hours after receipt of
-              order.
+              Thank you for browsing our products, I hope you enjoy shopping. We
+              will be shipped within 24 hours after receipt of order.
             </p>
           </div>
         </div>

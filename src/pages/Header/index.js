@@ -5,7 +5,7 @@ function Header() {
     <div class="navbar">
       <div class="logo">
         <a href="/">
-          <img src="/images/logo.png" alt="" width="125px" />
+          <img src="/images/logo.png" alt="Logo" width="170px" />
         </a>
       </div>
       <nav></nav>
