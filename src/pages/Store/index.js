@@ -15,7 +15,7 @@ function Store() {
 
   useEffect(() => {
     axios
-      .get("http://api.cryptozap.xyz/product")
+      .get("https://api.cryptozap.xyz/product")
       .then(function (response) {
         // handle success
         // console.log(response.data);

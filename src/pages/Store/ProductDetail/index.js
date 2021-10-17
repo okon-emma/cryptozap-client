@@ -16,7 +16,7 @@ function ProductDetail() {
 
   useEffect(() => {
     axios
-      .get("http://api.cryptozap.xyz/product/" + id)
+      .get("https://api.cryptozap.xyz/product/" + id)
       .then(function (response) {
         // handle success
         // console.log(response.data.data);
